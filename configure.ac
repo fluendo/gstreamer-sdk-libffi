@@ -52,7 +52,7 @@ dnl The -no-testsuite modules omit the test subdir.
 AM_CONDITIONAL(TESTSUBDIR, test -d $srcdir/testsuite)
 
 TARGETDIR="unknown"
-case "$host" in
+case "$target" in
   alpha*-*-*)
 	TARGET=ALPHA; TARGETDIR=alpha;
 	# Support 128-bit long double, changeable via command-line switch.
